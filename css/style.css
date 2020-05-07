@@ -1,0 +1,306 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-container 
+{
+    margin:0 auto;
+    max-width: 1120px;
+    min-width: 320px;
+}
+
+/* header */
+.menu-bar
+{
+    display: none;
+}
+.header-container
+{
+    width: 100%;
+    padding: 70px 32px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.main-logo
+{
+    width: 163px;
+}
+.header-nav
+{
+    display: flex;
+    align-items: center;
+}
+.header-link
+{
+    text-decoration: none;
+    outline: none;
+    color: black;
+    text-transform: uppercase;
+    margin: 0 7px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: color .3s ease;
+}
+.header-link:hover
+{
+    color:#4c4c4c;
+}
+.social
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.social-icon
+{
+    margin:0 8px;
+    font-size: 24px;
+    transition: all .3s ease;
+}
+.social-icon:hover
+{
+    color: rgba(0, 0,0,.5);
+    transform: translateY(-30%);
+}
+.space
+{
+    display: none;
+}
+
+/* end header */
+
+/* banner section */
+
+.banner
+{
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    align-items: end;
+    padding: 33px;
+}
+.banner-image
+{
+    width: 100%;
+    
+}
+.banner-content
+{
+    padding-left: 30px;
+    display: grid;
+    grid-template-areas: "header ."
+                         "latest insta";
+}
+.banner-img-container
+{
+    display: flex;
+    align-items: flex-end;
+}
+.banner-content-header
+{
+    font-size: 30px;
+    width: 258px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    grid-area: header;
+}
+.banner-latest-img,.banner-insta-img
+{
+    width: 250px;
+}
+.banner-latest-container
+{
+    grid-area: latest;
+}
+.banner-insta-container
+{
+    grid-area: insta;
+}
+.banner-img
+{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+.banner-bottom
+{
+    position: absolute;
+    left:30px;
+    bottom: 25px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* end banner section */
+
+/* subscribe */
+.subscribe
+{
+    margin: 32px;
+    background-color: #4C665B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 50px;
+}
+.subscribe-header
+{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.subscribe-mail
+{
+    width: 240px;
+}
+.subscribe-btn
+{
+    width: 170px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #ebefee;
+    border: none;
+    cursor: pointer;
+    margin-left: 4px;
+}
+.subscribe-input
+{
+    height: 50px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.subscribe-class
+{
+    display: flex;
+    justify-content: center;
+}
+/* subscribe end */
+
+/* blog */
+
+.blog
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.blog-item
+{
+    padding: 24px;
+}
+.blog-img
+{
+    width: 100%;
+}
+.blog-img-container
+{
+    position: relative;
+}
+.blog-img-desc-container
+{
+    position: absolute;
+    bottom: -70px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.blog-img-desc
+{
+    width: 150px;
+    height: 140px;
+    background-color: rgba(236, 240, 239, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.underline
+{
+    background-color: #000;
+    width: 45px;
+    height: 2px;
+    margin: 3px auto;
+    border: none;
+}
+.blog-desc-container
+{
+    margin-top: 90px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+/* end blog */
+
+/* insta */
+.insta
+{
+    padding: 50px 10px 50px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.insta-item
+{
+    width: 20%;
+}
+.insta-img
+{
+    width: 100%;
+}
+.insta-desc
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 24px;
+    width: 20%;
+}
+/* end insta */
+
+.underline-two
+{
+    height: 3px;
+    background-color: black;
+    color: black;
+    display: block;
+    margin: 5px auto;
+    width: 80%;
+}
+/* Footer */
+
+.footer
+{
+    padding: 20px;
+}
+.footer p 
+{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,157 @@
+@media screen and (max-width:1200px)
+{
+    .main-container
+    {
+        max-width: 800px;
+    }
+    .header-container
+    {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-column-gap: 10px;
+    }
+    .banner-latest-img, .banner-insta-img
+    {
+        width: 178px;
+    }
+    .banner-content-header
+    {
+        font-size: 20px;
+        width: 200px;
+    }
+    .banner-bottom
+    {
+        left:15px;
+        font-size: 16px;
+        bottom: 15px;
+    }
+    
+}
+@media screen and (max-width:764px)
+{
+    .space
+    {
+        display: block;
+    }
+    .header-container
+    {
+        grid-template-columns: 1fr 10fr 1fr ;
+        grid-column-gap: 10px;
+        padding: 40px 0;
+    }
+    .main-logo
+    {
+        display: block;
+        margin: 0 auto;
+    }
+    .menu-bar
+    {
+        display: flex;
+        flex-direction: column;
+        margin-right:12px;
+        justify-content: center;
+    }
+    .menu-bar span
+    {
+        display: block;
+        width: 30px;
+        height: 2px;
+        color: black;
+        background-color: black;
+        margin: 3px;
+        transition: all .4s ease-in-out;
+    }
+    .menu-bar:hover .s1
+    {
+        transform: translate(-20%);
+    }
+    .menu-bar:hover .s3
+    {
+        transform: translate(20%);
+    }
+    .header-nav, .social
+    {
+        display: none;
+    } 
+    .banner-latest-img, .banner-insta-img
+    {
+        width: 140px;
+    }
+    .banner-content-header
+    {
+        font-size: 16px;
+        width: 180px;
+    }
+    .banner-bottom
+    {
+        left:15px;
+        font-size: 16px;
+        bottom: 15px;
+    }
+    .blog
+    {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width:676px)
+{
+    .banner
+    {
+        grid-template-columns: 1fr;
+    }
+    .banner-content-header
+    {
+        margin-bottom: 0;
+        margin-top: 8px;
+    }
+    .banner-content
+    {
+        padding-left: 0px;
+        display: grid;
+        grid-template-areas: "header"
+                             "latest"
+                             "insta";
+        grid-gap: 8px;
+    }
+    .banner-content-header
+    {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+    .banner-latest-img, .banner-insta-img
+    {
+        width: 85%;
+        margin:0 auto;
+    }
+    .banner-bottom
+    {
+        left:50px;
+        text-align: center;
+    }
+    .subscribe-class
+    {
+        flex-wrap: wrap;
+        flex: 100%;
+    }
+    .subscribe-class input
+    {
+        margin-bottom: 18px;
+    }
+    .subscribe-mail
+    {
+        width: 180px;
+    }
+    .subscribe-header
+    {
+        font-size: 26px;
+    }
+    .insta-item
+    {
+        width: 90%;
+        margin:0 auto;
+        margin-top: 12px;
+    }
+
+}
